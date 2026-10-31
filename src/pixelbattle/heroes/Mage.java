@@ -5,6 +5,10 @@ import pixelbattle.core.Skill;
 import pixelbattle.core.Target;
 import pixelbattle.engine.Sprite;
 
+import pixelbattle.core.Ultimate;
+import pixelbattle.core.Fighter;
+import pixelbattle.ultimates.Meteor;
+
 /** Маг — потужні заклинання та лікування. */
 public class Mage extends Hero {
 
@@ -25,6 +29,7 @@ public class Mage extends Hero {
             return user.getName() + " зцілює " + target.getName();
         }));
 
+        setUltimate(new Meteor());
         // TODO 8: ультимейт «Метеорит» — окремий клас Meteor
         //   у файлі pixelbattle/ultimates/Meteor.java.
         //   Тут лише підключіть його: setUltimate(new Meteor());
