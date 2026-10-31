@@ -25,10 +25,6 @@ public class Knight extends Hero {
             return user.getName() + " захищається";
         }));
 
-        // TODO 7: ультимейт «Небесний молот» — АНОНІМНИЙ КЛАС, що реалізує Ultimate:
-        //   кожному ЖИВОМУ ворогу 15 шкоди та оглушення на 1 хід.
-        //   (не забудьте import pixelbattle.core.Ultimate; та import pixelbattle.core.Fighter;)
-
         setUltimate(new Ultimate() {
              @Override public String getName() { return "Небесний молот"; }
              @Override public String getDescription() { return "Кожному ЖИВОМУ ворогу 15 шкоди та оглушення на 1 хід"; }

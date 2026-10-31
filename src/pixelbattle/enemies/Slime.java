@@ -21,6 +21,4 @@ public class Slime extends Enemy {
     {
         heal(6);
     }
-    // TODO 6: пасивка «Регенерація» — перевизначте onTurnStart():
-    //   на початку кожного свого ходу слиз лікується на 6 (heal(6)).
 }
